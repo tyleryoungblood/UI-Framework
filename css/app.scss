@@ -1,0 +1,74 @@
+// Inject files here with a double underscore in front of them (such as __variables.scss)
+// inject:top:scss
+@import "__variables.scss";
+// endinject
+
+// Inject files here using the command `bower install --save`
+// bower:scss
+@import "../components/bootstrap-sass-official/assets/stylesheets/bootstrap.scss";
+// endbower
+
+// Inject files here with a single underscore in front of them (such as _partial.scss)
+// inject:scss
+@import "_partial.scss";
+// endinject
+
+body {
+	background: #ccc;
+}
+
+.bs-docs-section {
+	width: 960px;
+	padding: 30px;
+	margin: 0 auto;
+	background: white;
+}
+
+
+.component-category {
+	color: white;
+	background: #1F3340;
+	padding: 10px;
+	margin: -30px -30px 20px -30px;
+}
+.component-subcat {
+	text-transform: uppercase;
+	color: #7F2725;
+	font-size: 1.5em;
+	font-weight: bolder;
+}
+
+.alert-global {
+	text-align: center;
+	color: white;
+}
+
+.alert-global.alert-positive {
+	background: #67A14C;
+}
+
+.alert-global.alert-info {
+	background: #265B80;
+}
+
+.alert-global.alert-warning {
+	background: #E0832E;
+}
+
+.alert-error.alert-dismissible {
+	color: #7F2725;
+	background: #E5D4D3;
+}
+
+.alert-info.alert-dismissible {
+	color: white;
+	background: #265B80;
+}
+
+code {
+	font-size: .8em;
+	color: #C5D3DF;
+	background: none;
+}
+
+

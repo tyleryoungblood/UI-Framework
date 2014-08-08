@@ -1,0 +1,20 @@
+{
+  "name": "ux-toolkit",
+  "version": "0.0.0",
+  "authors": [
+    "Tyler Youngblood <tyleryoungblood@yahoo.com>"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap-sass-official": "~3.2.0+1"
+  }
+}
