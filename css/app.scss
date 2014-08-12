@@ -17,6 +17,25 @@ body {
 	background: #ccc;
 }
 
+thead {
+	background: #f8f8f8;
+}
+
+tbody {
+	border-bottom: 1px solid #ddd;
+}
+
+h2 + code { // for classes displayed in <code> tags to the right of <h2>'s
+	margin-top: 25px;
+	display: inline;
+}
+
+.inline {
+	display: inline;
+}
+
+
+
 .bs-docs-section {
 	max-width: 960px;
 	padding: 0 30px 30px 30px;
