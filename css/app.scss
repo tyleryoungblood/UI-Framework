@@ -10,20 +10,11 @@
 
 // Inject files here with a single underscore in front of them (such as _partial.scss)
 // inject:scss
+@import "_images.scss";
+@import "_panels.scss";
 @import "_partial.scss";
 // endinject
 
-body {
-	background: #ccc;
-}
-
-thead {
-	background: #f8f8f8;
-}
-
-tbody {
-	border-bottom: 1px solid #ddd;
-}
 
 h2 + code { // for classes displayed in <code> tags to the right of <h2>'s
 	margin-top: 25px;
@@ -34,8 +25,6 @@ h2 + code { // for classes displayed in <code> tags to the right of <h2>'s
 	display: inline;
 }
 
-
-
 .bs-docs-section {
 	max-width: 960px;
 	padding: 0 30px 30px 30px;
@@ -43,19 +32,24 @@ h2 + code { // for classes displayed in <code> tags to the right of <h2>'s
 	background: white;
 }
 
-
 .component-category {
 	color: white;
 	background: #1F3340;
 	padding: 10px;
 	margin: 0 -30px 20px -30px;
 }
+
 .component-subcat {
 	text-transform: uppercase;
 	color: #7F2725;
 	font-size: 1.5em;
 	font-weight: bolder;
 }
+
+
+/************************************************
+* ALERTS
+*************************************************/
 
 .alert-global {
 	text-align: center;
@@ -91,3 +85,22 @@ code {
 }
 
 
+/************************************************
+* TABLES
+*************************************************/
+
+thead {
+	background: #f8f8f8;
+}
+
+tbody {
+	border-bottom: 1px solid #ddd;
+}
+
+.row-highlighted-red {
+	//get proper background color and remove "danger" class from <tr>
+}
+
+.row-highlighted-blue {
+	//get proper background color and remove "success" class from <tr>
+}
