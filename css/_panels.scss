@@ -1,28 +1,10 @@
-.panel {
-	border: 1px solid #c1c9d0;
-	padding: 20px;
-	border-radius: 0;
+.panel-heading {
+	font-family: $headings-font-family;
+	font-size: $font-size-h3;
 }
 
-.panel h1 {
-	font-size: 22px;
-	color: #5b7192;
-	background: #f2f4f5;
-	padding: 20px 20px 18px 20px;
-	margin: -20px -20px 20px -20px;
-	border-bottom: 1px solid #c1c9d0;
-}
-
-.panel p {
-	margin: 0;
-	padding: 0;
-}
-
-.recessed {
-	background: #f2f4f5;
-	padding: 20px;
-	border-top: 2px solid #c1c9d0;
-	border-right: 1px solid #c1c9d0;
-	border-bottom: 0;
-	border-left: 1px solid #c1c9d0;
+.has-table {
+	padding:0;
+	background: transparent;
+	border-top:none;
 }

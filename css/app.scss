@@ -10,9 +10,27 @@
 
 // Inject files here with a single underscore in front of them (such as _partial.scss)
 // inject:scss
-@import "_images.scss";
+@import "_alerts.scss";
+@import "_badges.scss";
+@import "_brandingVariables.scss";
+@import "_breadcrumbs.scss";
+@import "_button.scss";
+@import "_cla.scss";
+@import "_fonts.scss";
+@import "_forms.scss";
+@import "_icons.scss";
+@import "_impersonation.scss";
+@import "_labels.scss";
+@import "_mixins.scss";
+@import "_navbar.scss";
+@import "_navs.scss";
+@import "_pagination.scss";
 @import "_panels.scss";
-@import "_partial.scss";
+@import "_progress-bar.scss";
+@import "_scaffolding.scss";
+@import "_tables.scss";
+@import "_typography.scss";
+@import "_well.scss";
 // endinject
 
 
