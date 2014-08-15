@@ -78,7 +78,7 @@
   width:100%;
 
   @media(min-width:$screen-sm) {
-    width:percentage((1/3));
+    width:percentage((1/4));
 
      &:nth-child(odd) {
       margin:0 2% 20px 0;
