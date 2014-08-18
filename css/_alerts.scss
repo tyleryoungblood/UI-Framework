@@ -21,7 +21,7 @@
 }
 
 .alert-global-positive {
-  @include alert-variant($alert-global-postiive-bg, $alert-global-postiive-border, $alert-global-postiive-text);
+  @include alert-variant($alert-global-positive-bg, $alert-global-positive-border, $alert-global-positive-text);
 }
 
 .alert-global-info {

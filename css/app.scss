@@ -1,6 +1,7 @@
 // Inject files here with a double underscore in front of them (such as __variables.scss)
 // inject:top:scss
-@import "_brandingVariables.scss";
+@import "__brandingVariables.scss";
+@import "__variables.scss";
 // endinject
 
 // Inject files here using the command `bower install --save`
@@ -8,21 +9,15 @@
 @import "../components/bootstrap-sass-official/assets/stylesheets/bootstrap.scss";
 // endbower
 
-// Inject files here with a single underscore in front of them (such as _partial.scss)
-// inject:scss
-
 @import "_cla.scss";
-// endinject
-
-
-h2 + code { // for classes displayed in <code> tags to the right of <h2>'s
-	margin-top: 25px;
-	display: inline;
-}
 
 p {
 	margin-left: 15px;
 }
+
+h2 + code {
+	margin-top: 28px;
+	margin-left: 15p;
 
 .hidden-hr {
 	height:4px; 
@@ -92,6 +87,11 @@ code {
 	color: #C5D3DF;
 	background: none;
 }
+
+.code {
+	line-height: 80%;
+}
+
 
 
 /************************************************
