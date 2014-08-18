@@ -46,14 +46,20 @@ gulp.task "inject-coffee", ->
         ignorePath: '.tmp'
     .pipe(gulp.dest('./'));
 
+gulp.task "inject-html", ->
+  gulp.src('index.html')
+      .pipe(plugins.fileInclude())
+      .pipe(gulp.dest('.tmp/'))
+      .pipe(browserSync.reload(stream: true))
+
 gulp.task "sass", ->
   sassStream = gulp.src('css/app.scss')
     .pipe plugins.plumber()
     .pipe plugins.clipEmptyFiles()
     .pipe plugins.sass
-      onError: (msg)-> 
+      onError: (msg) ->
         console.log(msg)
-        browserSync.notify()
+        browserSync.notify(msg)
       includePaths: ['css']
     .pipe plugins.autoprefixer [
         "last 15 versions"
@@ -85,26 +91,27 @@ gulp.task 'clean-tmp', (cb) ->
     cb()
 
 gulp.task 'setup-tmp', ['clean-tmp'], (cb) ->
-  runSequence('bower', 'coffee', 'inject-coffee', 'inject-sass', 'sass', -> 
+  runSequence('bower', 'coffee', 'inject-coffee', 'inject-sass', 'sass', 'inject-html', -> 
     setTimeout(cb, 100))
 
 gulp.task "watch", ['setup-tmp'], ->
   gulp.watch 'css/**/*.scss', (e) ->
     if e.type == 'added' || e.type == 'deleted'
-      gulp.start('inject-sass')
+      runSequence('inject-sass', 'inject-html')
     else
       gulp.start('sass')
 
   gulp.watch 'js/**/*', (e) ->
     if e.type == 'added' || e.type == 'deleted'
-      runSequence('coffee', 'inject-coffee')
+      runSequence('coffee', 'inject-coffee', 'inject-html')
     else
       gulp.start('coffee')
 
-  gulp.watch 'bower.json', ['bower']
+  gulp.watch 'bower.json', ->
+    runSequence('bower', 'inject-html')
 
-  plugins.watch({ glob: ['index.html', 'views/**/*.html'] })
-    .pipe(browserSync.reload(stream: true))
+  gulp.watch ['index.html', 'partials/**/*.html'], (e) ->
+    gulp.start('inject-html')
 
 ###
 Minify and concatenate files
