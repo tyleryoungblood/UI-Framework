@@ -1,7 +1,6 @@
 // Inject files here with a double underscore in front of them (such as __variables.scss)
 // inject:top:scss
 @import "__brandingVariables.scss";
-@import "__variables.scss";
 // endinject
 
 // Inject files here using the command `bower install --save`
@@ -51,38 +50,6 @@ h2 + code {
 	font-weight: bolder;
 }
 
-
-/***********************************************
-* ALERTS
-************************************************/
-
-.alert-global {
-	text-align: center;
-	color: white;
-}
-
-.alert-global.alert-positive {
-	background: #67A14C;
-}
-
-.alert-global.alert-info {
-	background: #265B80;
-}
-
-.alert-global.alert-warning {
-	background: #E0832E;
-}
-
-.alert-error.alert-dismissible {
-	color: #7F2725;
-	background: #E5D4D3;
-}
-
-.alert-info.alert-dismissible {
-	color: white;
-	background: #265B80;
-}
-
 code {
 	font-size: .8em;
 	color: #C5D3DF;
@@ -92,17 +59,6 @@ code {
 	margin: 0;
 	display: block;
 }
-
-br {
-	padding: 0;
-	margin: 0;
-}
-
-// .code {
-// 	line-height: 80%;
-// }
-
-
 
 /************************************************
 * TABLES
@@ -115,11 +71,3 @@ thead {
 tbody {
 	border-bottom: 1px solid #ddd;
 }
-
-// .row-highlighted-red {
-// 	//get proper background color and remove "danger" class from <tr>
-// }
-
-// .row-highlighted-blue {
-// 	//get proper background color and remove "success" class from <tr>
-// }
