@@ -1,0 +1,85 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'c:\\Program Files\\nodejs\\node.exe',
+1 verbose cli   'c:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install',
+1 verbose cli   'gridline-bootstrap' ]
+2 info using npm@1.4.14
+3 info using node@v0.10.29
+4 warn package.json @ No description
+5 warn package.json @ No repository field.
+6 warn package.json @ No README data
+7 verbose readDependencies using package.json deps
+8 verbose cache add [ 'gridline-bootstrap', null ]
+9 verbose cache add name=undefined spec="gridline-bootstrap" args=["gridline-bootstrap",null]
+10 verbose parsed url { protocol: null,
+10 verbose parsed url   slashes: null,
+10 verbose parsed url   auth: null,
+10 verbose parsed url   host: null,
+10 verbose parsed url   port: null,
+10 verbose parsed url   hostname: null,
+10 verbose parsed url   hash: null,
+10 verbose parsed url   search: null,
+10 verbose parsed url   query: null,
+10 verbose parsed url   pathname: 'gridline-bootstrap',
+10 verbose parsed url   path: 'gridline-bootstrap',
+10 verbose parsed url   href: 'gridline-bootstrap' }
+11 silly lockFile 6085964c-gridline-bootstrap gridline-bootstrap
+12 verbose lock gridline-bootstrap C:\Users\ask14\AppData\Roaming\npm-cache\6085964c-gridline-bootstrap.lock
+13 silly lockFile 6085964c-gridline-bootstrap gridline-bootstrap
+14 silly lockFile 6085964c-gridline-bootstrap gridline-bootstrap
+15 verbose addNamed [ 'gridline-bootstrap', '' ]
+16 verbose addNamed [ null, '*' ]
+17 silly lockFile efb8f790-gridline-bootstrap gridline-bootstrap@
+18 verbose lock gridline-bootstrap@ C:\Users\ask14\AppData\Roaming\npm-cache\efb8f790-gridline-bootstrap.lock
+19 silly addNameRange { name: 'gridline-bootstrap', range: '*', hasData: false }
+20 verbose url raw gridline-bootstrap
+21 verbose url resolving [ 'https://registry.npmjs.org/', './gridline-bootstrap' ]
+22 verbose url resolved https://registry.npmjs.org/gridline-bootstrap
+23 info trying registry request attempt 1 at 13:45:01
+24 http GET https://registry.npmjs.org/gridline-bootstrap
+25 http 404 https://registry.npmjs.org/gridline-bootstrap
+26 verbose headers { date: 'Tue, 19 Aug 2014 17:45:02 GMT',
+26 verbose headers   server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+26 verbose headers   'content-type': 'application/json',
+26 verbose headers   'cache-control': 'max-age=0',
+26 verbose headers   'content-length': '52',
+26 verbose headers   'accept-ranges': 'bytes',
+26 verbose headers   via: '1.1 varnish',
+26 verbose headers   age: '0',
+26 verbose headers   'x-served-by': 'cache-dfw1835-DFW',
+26 verbose headers   'x-cache': 'MISS',
+26 verbose headers   'x-cache-hits': '0',
+26 verbose headers   'x-timer': 'S1408470302.604709,VS0,VE67',
+26 verbose headers   'keep-alive': 'timeout=10, max=50',
+26 verbose headers   connection: 'Keep-Alive' }
+27 silly registry.get cb [ 404,
+27 silly registry.get   { date: 'Tue, 19 Aug 2014 17:45:02 GMT',
+27 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+27 silly registry.get     'content-type': 'application/json',
+27 silly registry.get     'cache-control': 'max-age=0',
+27 silly registry.get     'content-length': '52',
+27 silly registry.get     'accept-ranges': 'bytes',
+27 silly registry.get     via: '1.1 varnish',
+27 silly registry.get     age: '0',
+27 silly registry.get     'x-served-by': 'cache-dfw1835-DFW',
+27 silly registry.get     'x-cache': 'MISS',
+27 silly registry.get     'x-cache-hits': '0',
+27 silly registry.get     'x-timer': 'S1408470302.604709,VS0,VE67',
+27 silly registry.get     'keep-alive': 'timeout=10, max=50',
+27 silly registry.get     connection: 'Keep-Alive' } ]
+28 silly lockFile efb8f790-gridline-bootstrap gridline-bootstrap@
+29 silly lockFile efb8f790-gridline-bootstrap gridline-bootstrap@
+30 error 404 404 Not Found: gridline-bootstrap
+30 error 404
+30 error 404 'gridline-bootstrap' is not in the npm registry.
+30 error 404 You should bug the author to publish it
+30 error 404
+30 error 404 Note that you can also install from a
+30 error 404 tarball, folder, or http url, or git url.
+31 error System Windows_NT 6.1.7601
+32 error command "c:\\Program Files\\nodejs\\node.exe" "c:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install" "gridline-bootstrap"
+33 error cwd c:\Users\ask14\Copy\Work\Unum\sandbox\ux-toolkit
+34 error node -v v0.10.29
+35 error npm -v 1.4.14
+36 error code E404
+37 verbose exit [ 1, true ]
