@@ -126,15 +126,19 @@
       <h2 class="component-subcat">Multi-Action Buttons</h2>
       <div class="bs-example row">
         <div class="btn-group">
-        	<button type="button" class="btn btn-silver">
-        		Dropdown
-        	</button>
-        		<button class="btn btn-silver dropdown-toggle">
-        			<span class="caret"></span>
-        			<span class="sr-only">Toggle Dropdown</span>
-        		</button>
-        </div>
-      </div>
+				  <button type="button" class="btn btn-silver">Default Action</button>
+				  <button type="button" class="btn btn-silver dropdown-toggle" data-toggle="dropdown">
+				    <span class="caret"></span>
+				    <span class="sr-only">Toggle Dropdown</span>
+				  </button>
+				  <ul class="dropdown-menu" role="menu">
+				    <li><a href="#">Another Action</a></li>
+				    <li><a href="#">A Third action</a></li>
+				    <li><a href="#">Something else here</a></li>
+				    <li class="divider"></li>
+				    <li><a href="#">Separated link</a></li>
+				  </ul>
+				</div>
 
       <h2 class="component-subcat">Button With Images</h2>
       <div class="bs-example row">
