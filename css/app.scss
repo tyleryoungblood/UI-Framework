@@ -80,3 +80,36 @@ tbody {
 .button-colors code {
 	margin-bottom: 15px;
 }
+
+.disabled-btns {
+
+	div[class|="bg"] { // target all divs with "bg" in their classname, ie .bg-light, .bg-medium, etc
+		border: 1px solid lighten($pewter, 30);
+		padding: 15px 30px;
+	}
+
+	button {
+		margin: 10px;
+	}
+}
+
+.disabled-btn-container {
+	margin-bottom: 15px;
+}
+
+.bg-light {
+	//background: darken($white, 10);
+	background: #f2f4f5;
+}
+
+.bg-medium {
+	background: $pewter;
+}
+
+.bg-dark {
+	background: $slate;
+}
+
+.btn.disabled-btn {
+    cursor: not-allowed;
+}
