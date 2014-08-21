@@ -19,6 +19,14 @@ h2 + code {
 	margin-left: 15px;
 }
 
+section.content {
+	background: #fff;
+	margin-top: 60px;
+	padding: 0 30px 30px 30px;
+	margin-left: -30px;
+	margin-right: -30px;
+}
+
 .hidden-hr {
 	height:4px; 
 	visibility:hidden; 
@@ -31,16 +39,14 @@ h2 + code {
 
 .bs-docs-section {
 	max-width: 960px;
-	padding: 0 30px 30px 30px;
 	margin: 0 auto;
-	background: white;
 }
 
 .component-category {
 	color: white;
 	background: #1F3340;
 	padding: 10px;
-	margin: 30px -30px 20px -30px;
+	margin: 0 -30px 20px -30px;
 
 	&.no-top-margin {
 		margin-top: 0;
@@ -121,4 +127,12 @@ tbody {
 .button-extra-margin button + button {
 	margin-left: 15px;
 	margin-right: 15px;
+}
+
+.alert-padding {
+	padding: 0 15px;
+}
+
+.alert-dismissable .close, .alert-dismissible .close {
+	right: 0;
 }
