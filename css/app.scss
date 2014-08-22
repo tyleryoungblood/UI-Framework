@@ -28,9 +28,9 @@ section.content {
 }
 
 .hidden-hr {
-	height:4px; 
-	visibility:hidden; 
-	margin-bottom:-1px;
+	height: 4px; 
+	visibility: hidden; 
+	margin-bottom: -1px;
 }
 
 .inline {
@@ -70,6 +70,15 @@ code {
 	display: block;
 }
 
+div.progress {
+	margin-bottom: 10px;
+}
+
+// add a margin between two progress bars
+.content .progress:first-of-type + code {
+	margin-bottom: 20px
+}
+
 /************************************************
 * TABLES
 *************************************************/
@@ -80,11 +89,6 @@ thead {
 
 tbody {
 	border-bottom: 1px solid #ddd;
-}
-
-.col-8 {
-	width: 12.5%;
-	margin-bottom: 15px;
 }
 
 .button-colors code {
@@ -133,6 +137,18 @@ tbody {
 	padding: 0 15px;
 }
 
-.alert-dismissable .close, .alert-dismissible .close {
+.alert-dismissable .close, 
+.alert-dismissible .close {
 	right: 0;
+}
+
+.input-group-addon {
+	padding-top: 0;
+	padding-bottom: 0;
+	width: 20px;
+}
+
+
+.nav-stacked {
+	width: 200px;
 }
