@@ -1,0 +1,92 @@
+nav
+{
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+
+    width: 250px;
+    height: 100vh;
+    padding: 10px 0 0 0;
+
+    opacity: .98;
+    background: #1f3340;
+
+    right: -250px;
+    transition:right 0.5s ease-in-out;
+}
+
+nav.show-menu {
+    right: 0px;
+    transition:right 0.5s ease-in-out;
+}
+
+nav li
+{
+    margin: 0 0 2px 0;
+
+    list-style-type: none;
+
+    background: lighten(#1f3340, 10%);
+}
+
+nav ul
+{
+    padding: 0;
+}
+
+nav a
+{
+    font-family: 'Source Sans Pro';
+    font-size: 22px;
+
+    display: inline-block;
+
+    width: 100%;
+    padding: 5px 15px 5px 15px;
+
+    color: #fff;
+}
+
+nav a:hover
+{
+    text-decoration: none;
+}
+
+.menu-logo
+{
+    margin: 15px;
+
+    text-align: center;
+
+    color: #fff;
+}
+
+.menu-header
+{
+    font-family: 'Oswald Light';
+    font-size: 30px;
+
+    margin: 15px;
+    margin-top: 90px;
+
+    color: #fff;
+}
+
+#menu-close
+{
+    position: absolute;
+    z-index: 2;
+    top: 20px;
+    left: -40px;
+
+    width: 40px;
+    height: 40px;
+    padding: 5px;
+
+    border: none;
+    background: #1f3340;
+}
+
+
+

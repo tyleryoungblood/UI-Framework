@@ -18,6 +18,12 @@ h1 {
 	font-size: 25px
 }
 
+h1.main-title {
+	font-family: 'Oswald Light';
+	font-size: 32px;
+	color: #1F3340;
+}
+
 h2 {
 	font-size: 19px;
 }
@@ -46,6 +52,8 @@ section.content {
 .bs-docs-section {
 	max-width: 960px;
 	margin: 0 auto;
+	position: relative;
+	overflow: hidden;
 }
 
 .component-category {
