@@ -5,14 +5,14 @@
     top: 0;
     right: 0;
 
-    width: 250px;
+    width: 350px;
     height: 100vh;
     padding: 10px 0 0 0;
 
     opacity: .98;
     background: #1f3340;
 
-    right: -250px;
+    right: -350px;
     transition:right 0.5s ease-in-out;
 }
 
@@ -49,15 +49,23 @@
     outline: 0;
 }
 
+#nav-menu a.nav-active {
+    color: #ccc;
+    background-color: lighten(#1f3340, 5%);
+}
+
 a#menu-open {
     width: 40px;
 }
 
-#nav-menu a:hover, #nav-menu a:active
+#nav-menu a:hover, #nav-menu a:active, #nav-menu a:focus
 {
     text-decoration: none;
     color: #ccc;
+    background-color: lighten(#1f3340, 5%);
 }
+
+
 
 .menu-logo
 {
