@@ -1,4 +1,4 @@
-nav
+#nav-menu
 {
     position: fixed;
     z-index: 1;
@@ -16,12 +16,12 @@ nav
     transition:right 0.5s ease-in-out;
 }
 
-nav.show-menu {
+#nav-menu.show-menu {
     right: 0px;
     transition:right 0.5s ease-in-out;
 }
 
-nav li
+#nav-menu li
 {
     margin: 0 0 2px 0;
 
@@ -30,12 +30,12 @@ nav li
     background: lighten(#1f3340, 10%);
 }
 
-nav ul
+#nav-menu ul
 {
     padding: 0;
 }
 
-nav a
+#nav-menu a
 {
     font-family: 'Source Sans Pro';
     font-size: 22px;
@@ -48,7 +48,7 @@ nav a
     color: #fff;
 }
 
-nav a:hover
+#nav-menu a:hover
 {
     text-decoration: none;
 }
