@@ -1,7 +1,7 @@
 #nav-menu
 {
     position: fixed;
-    z-index: 1;
+    z-index: 3;
     top: 0;
     right: 0;
 
@@ -69,11 +69,11 @@ a#menu-open {
 
 .menu-logo
 {
-    margin: 15px;
-
-    text-align: center;
-
-    color: #fff;
+    background-image: url('/img/logo-cl.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 60px;
+    font-size: 0; // remove the H1 text using font-size instead of text-indend: -9999px;
 }
 
 .menu-header
@@ -82,7 +82,7 @@ a#menu-open {
     font-size: 30px;
 
     margin: 15px;
-    margin-top: 90px;
+    margin-top: 30px;
 
     color: #fff;
 }
