@@ -91,3 +91,18 @@
     width:100%;
   }
 }
+
+.alert-dismissable .close, .alert-dismissible .close {
+    right: 0;
+    top: 0;
+    padding-left: 5px;
+}
+
+.alert-btn-group {
+  display: inline-block;
+  float: right;
+}
+
+.alert p {
+  margin-bottom: 10px;
+}
