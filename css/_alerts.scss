@@ -2,6 +2,12 @@
     Alerts
 ======================================*/
 .alert {
+  margin-top: 24px;
+  margin-bottom: 5px;
+}
+
+
+.alert {
   .close {
     font-size:28px;
     line-height: 0.8;
@@ -74,7 +80,6 @@
 
 .alert-block {
   display:inline-block;
-  margin:0 0 20px;
   width:100%;
 
   @media(min-width:$screen-sm) {

@@ -111,4 +111,11 @@ a#menu-open {
     background-position: center;
 }
 
+@media only screen and (max-width: 960) {
+    h1.main-page-title {
+        margin-left: 15px;
+        padding-left: 15px;
+    }
+}
+
 

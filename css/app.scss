@@ -85,6 +85,12 @@ code {
 	display: block;
 }
 
+code:first-of-type {
+	margin-top: 24px;
+}
+
+
+
 div.progress {
 	margin-bottom: 10px;
 }
@@ -162,3 +168,21 @@ tbody {
 .nav-stacked {
 	width: 200px;
 }
+
+@media only screen and (max-width: 960px) {
+	h1.main-page-title {
+		margin-left: 5px;
+		padding-left: 5px;
+	}
+}
+
+@media only screen and (max-width: 767px) {
+	code:first-of-type {
+		margin-top: 0; //remove top margin from <code> when it slides beneath alerts
+	}
+
+	code {
+		margin-left: -15px;
+	}
+}
+
