@@ -78,6 +78,48 @@ body {
     Buttons (Overrides)
 ======================================*/
 
+.button-colors code {
+	margin-bottom: 15px;
+}
+
+.disabled-btns {
+
+	div[class|="bg"] { // target all divs with "bg" in their classname, ie .bg-light, .bg-medium, etc
+		border: 1px solid lighten($pewter, 30);
+		padding: 15px 30px;
+	}
+
+	button {
+		margin: 10px;
+	}
+}
+
+.disabled-btn-container {
+	margin-bottom: 15px;
+}
+
+.bg-light {
+	//background: darken($white, 10);
+	background: #f2f4f5;
+}
+
+.bg-medium {
+	background: $pewter;
+}
+
+.bg-dark {
+	background: $slate;
+}
+
+.btn.disabled-btn {
+    cursor: not-allowed;
+}
+
+.button-extra-margin button + button {
+	margin-left: 15px;
+	margin-right: 15px;
+}
+
 /*======================================
     CLA (Overrides)
 ======================================*/
@@ -109,6 +151,10 @@ body {
 /*======================================
     Navbar (Overrides)
 ======================================*/
+
+.nav-stacked {
+	width: 200px;
+}
 
 #nav-menu
 {
@@ -252,6 +298,14 @@ a#menu-open {
     Tables (Overrides)
 ======================================*/
 
+thead {
+	background: #f8f8f8;
+}
+
+tbody {
+	border-bottom: 1px solid #ddd;
+}
+
 .panel .table {
   margin: -15px;
   width: 100%;
@@ -355,69 +409,13 @@ div.progress {
 	margin-bottom: 20px
 }
 
-/************************************************
-* TABLES
-*************************************************/
 
-thead {
-	background: #f8f8f8;
-}
 
-tbody {
-	border-bottom: 1px solid #ddd;
-}
-
-.button-colors code {
-	margin-bottom: 15px;
-}
-
-.disabled-btns {
-
-	div[class|="bg"] { // target all divs with "bg" in their classname, ie .bg-light, .bg-medium, etc
-		border: 1px solid lighten($pewter, 30);
-		padding: 15px 30px;
-	}
-
-	button {
-		margin: 10px;
-	}
-}
-
-.disabled-btn-container {
-	margin-bottom: 15px;
-}
-
-.bg-light {
-	//background: darken($white, 10);
-	background: #f2f4f5;
-}
-
-.bg-medium {
-	background: $pewter;
-}
-
-.bg-dark {
-	background: $slate;
-}
-
-.btn.disabled-btn {
-    cursor: not-allowed;
-}
-
-.button-extra-margin button + button {
-	margin-left: 15px;
-	margin-right: 15px;
-}
 
 .input-group-addon {
 	padding-top: 0;
 	padding-bottom: 0;
 	width: 20px;
-}
-
-
-.nav-stacked {
-	width: 200px;
 }
 
 .col-sm-3 {
@@ -446,17 +444,4 @@ tbody {
 		margin-left: 0;
 	}
 
-
-
 }
-
-
-
-
-
-.red {background: red;}
-.green{background:green;}
-.blue{background:blue;}
-
-
-
