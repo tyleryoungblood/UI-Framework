@@ -10,6 +10,261 @@
 
 @import "_cla.scss";
 
+
+/*======================================
+    Alerts (Overrides)
+======================================*/
+
+.alert {
+  margin: 12px 0;
+}
+
+.alert-row.row {
+  margin-left: 0;
+}
+
+.component-subcat .alert {
+  margin-bottom: 0;
+}
+
+.alert-dismissable .close, .alert-dismissible .close {
+    right: 0;
+    top: 0;
+    padding-left: 5px;
+}
+
+.alert-btn-group {
+  display: inline-block;
+  float: right;
+}
+
+.alert p {
+  margin-bottom: 10px;
+}
+
+@media (max-width: 991px) and (min-width:767px) {
+  .alert-block {
+    width:95%;
+    margin:0 5% 0 0;
+  }
+}
+
+@media (min-width:992px) {
+  .alert-block {
+    width:50%;
+  }
+}
+
+/*======================================
+    Badges (Overrides)
+======================================*/
+.badge-subscript {
+	margin:0 0 0 -6px;
+}
+
+/*======================================
+    Branding Variables (Overrides)
+======================================*/
+
+body {
+	background: #edeff0;
+}               
+
+/*======================================
+    Breadcrumbs (Overrides)
+======================================*/
+
+/*======================================
+    Buttons (Overrides)
+======================================*/
+
+/*======================================
+    CLA (Overrides)
+======================================*/
+
+/*======================================
+    fonts (Overrides)
+======================================*/
+
+/*======================================
+    Forms (Overrides)
+======================================*/
+
+/*======================================
+    Icons (Overrides)
+======================================*/
+
+/*======================================
+    Impersonation (Overrides)
+======================================*/
+
+/*======================================
+    Labels (Overrides)
+======================================*/
+
+/*======================================
+    Mixins (Overrides)
+======================================*/
+
+/*======================================
+    Navbar (Overrides)
+======================================*/
+
+#nav-menu
+{
+    position: fixed;
+    z-index: 3;
+    top: 0;
+    right: 0;
+
+    width: 350px;
+    height: 100vh;
+    padding: 10px 0 0 0;
+
+    opacity: .98;
+    background: #1f3340;
+
+    right: -350px;
+    transition:right 0.5s ease-in-out;
+}
+
+#nav-menu.show-menu {
+    right: 0px;
+    transition:right 0.5s ease-in-out;
+}
+
+#nav-menu li
+{
+    margin: 0 0 2px 0;
+
+    list-style-type: none;
+
+    background: lighten(#1f3340, 10%);
+}
+
+#nav-menu ul
+{
+    padding: 0;
+}
+
+#nav-menu a
+{
+    font-family: 'Source Sans Pro';
+    font-size: 22px;
+
+    display: inline-block;
+
+    width: 100%;
+    padding: 5px 15px 5px 15px;
+
+    color: #fff;
+    outline: 0;
+}
+
+#nav-menu a.nav-active {
+    color: #ccc;
+    background-color: lighten(#1f3340, 5%);
+}
+
+a#menu-open {
+    width: 40px;
+}
+
+#nav-menu a:hover, #nav-menu a:active, #nav-menu a:focus
+{
+    text-decoration: none;
+    color: #ccc;
+    background-color: lighten(#1f3340, 5%);
+}
+
+.menu-logo
+{
+    background-image: url('/img/logo-cl.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 60px;
+    font-size: 0; // remove the H1 text using font-size instead of text-indend: -9999px;
+}
+
+.menu-header
+{
+    font-family: 'Oswald Light';
+    font-size: 30px;
+
+    margin: 15px;
+    margin-top: 30px;
+
+    color: #fff;
+}
+
+#menu-open
+{
+    position: absolute;
+    z-index: 2;
+    top: 20px;
+    left: -40px;
+
+    width: 40px;
+    height: 40px;
+    padding: 5px;
+
+    border: none;
+    background: #1f3340;
+    background-image: url("/img/btn-menu.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.show-menu #menu-open {
+    background-image: url("/img/btn-menu-close.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+@media only screen and (max-width: 960) {
+    h1.main-page-title {
+        margin-left: 15px;
+        padding-left: 15px;
+    }
+}
+
+/*======================================
+    Navs (Overrides)
+======================================*/
+
+/*======================================
+    Pagination (Overrides)
+======================================*/
+
+/*======================================
+    Panels (Overrides)
+======================================*/
+
+/*======================================
+    Progress Bars (Overrides)
+======================================*/
+
+/*======================================
+    Scaffolding (Overrides)
+======================================*/
+
+/*======================================
+    Tables (Overrides)
+======================================*/
+
+.panel .table {
+  margin: -15px;
+  width: 100%;
+}
+
+/*======================================
+    Typography (Overrides)
+======================================*/
+
+/*======================================
+    Wells (Overrides)
+======================================*/
+
 p {
 	margin-left: 15px;
 }
@@ -73,6 +328,7 @@ section.content {
 	color: #7F2725;
 	font-size: 1.5em;
 	font-weight: bolder;
+
 }
 
 code {
@@ -81,15 +337,14 @@ code {
 	background: none;
 	line-height: 1.5;
 	padding: 0;
-	margin: 0;
+	margin-top: 12px;
 	display: block;
+
 }
 
-code:first-of-type {
-	margin-top: 24px;
+code + code {
+	margin-top: 0;
 }
-
-
 
 div.progress {
 	margin-bottom: 10px;
@@ -154,10 +409,6 @@ tbody {
 	margin-right: 15px;
 }
 
-.alert-padding {
-	padding: 0 15px;
-}
-
 .input-group-addon {
 	padding-top: 0;
 	padding-bottom: 0;
@@ -169,6 +420,10 @@ tbody {
 	width: 200px;
 }
 
+.col-sm-3 {
+	padding-left: 0;
+}
+
 @media only screen and (max-width: 960px) {
 	h1.main-page-title {
 		margin-left: 5px;
@@ -178,11 +433,30 @@ tbody {
 
 @media only screen and (max-width: 767px) {
 	code:first-of-type {
-		margin-top: 0; //remove top margin from <code> when it slides beneath alerts
+		margin-top: -6px; //remove top margin from <code> when it slides beneath alerts
+
+	}
+
+	code:last-of-type {
+		margin-bottom: 24px;
 	}
 
 	code {
-		margin-left: -15px;
+		padding-left: 0;
+		margin-left: 0;
 	}
+
+
+
 }
+
+
+
+
+
+.red {background: red;}
+.green{background:green;}
+.blue{background:blue;}
+
+
 

@@ -21,8 +21,7 @@ $tangerine: #f1c44f;
 
 $white: #fff;
 $silver: #D4DADE;
-$off-white: #F2F4F5;
-$platinum: $off-white;
+$platinum: #F2F4F5;
 
 /***************************
 	FONT VARIABLES
@@ -58,7 +57,7 @@ $brand-danger:          $dark-red;
 ================================*/
 
 //** Background color for `<body>`.
-$body-bg:               #edeff0;
+$body-bg:               #fff;
 //** Global text color on `<body>`.
 $text-color:            $charcoal;
 
@@ -323,7 +322,7 @@ $pagination-active-bg:                 $brand-primary !default;
 $pagination-active-border:             $brand-primary !default;
 
 $pagination-disabled-color:            $gray;
-$pagination-disabled-bg:               $off-white;
+$pagination-disabled-bg:               $platinum;
 $pagination-disabled-border:           #ddd !default;
 
 //================================

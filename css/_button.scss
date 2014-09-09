@@ -29,8 +29,8 @@
   @include button-color-variant($charcoal, $silver, darken($silver, 10));
 }
 
-.btn-white {
-  @include button-color-variant($charcoal, $white, darken($white, 10));
+.btn-platinum {
+  @include button-color-variant($charcoal, $platinum, darken($platinum, 10));
 }
 
 .btn-moss {

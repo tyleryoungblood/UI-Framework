@@ -2,12 +2,6 @@
     Alerts
 ======================================*/
 .alert {
-  margin-top: 24px;
-  margin-bottom: 5px;
-}
-
-
-.alert {
   .close {
     font-size:28px;
     line-height: 0.8;
@@ -80,34 +74,12 @@
 
 .alert-block {
   display:inline-block;
+  margin:0 0 20px;
   width:100%;
-
-  @media(min-width:$screen-sm) {
-    width:percentage((1/4));
-
-     &:nth-child(odd) {
-      margin:0 2% 20px 0;
-    }
-  }
 
   strong {
     display:block;
     margin:0 0 10px;
     width:100%;
   }
-}
-
-.alert-dismissable .close, .alert-dismissible .close {
-    right: 0;
-    top: 0;
-    padding-left: 5px;
-}
-
-.alert-btn-group {
-  display: inline-block;
-  float: right;
-}
-
-.alert p {
-  margin-bottom: 10px;
 }
