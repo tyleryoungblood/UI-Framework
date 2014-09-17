@@ -365,19 +365,29 @@ input[type="text"] {
 
 #nav-menu
 {
+	ul {
+		position: absolute;
+		width: 100%;
+		// height: 100vh;
+		bottom: 0;
+		top: 300px;
+		overflow: auto;
+		-webkit-overflow-scrolling: touch; // iOS momentum scrolling
+	}
+
+
     position: fixed;
     z-index: 3;
     top: 0;
-    right: 0;
 
-    width: 250px;
+    width: 240px;
     height: 100vh;
     padding: 10px 0 0 0;
 
     opacity: .98;
     background: #1f3340;
 
-    right: -250px;
+    right: -240px;
     transition:right 0.5s ease-in-out;
 
 	 @media only screen and (min-width:480px) {
@@ -447,7 +457,10 @@ a#menu-open {
 .menu-header
 {
     font-family: 'Oswald Light';
-    font-size: 30px;
+    font-size: 22px;
+    @media only screen and(min-width: 480px) {
+    	font-size: 30px;
+    }
 
     margin: 15px;
     margin-top: 30px;
