@@ -14,16 +14,12 @@
 /*============================================
     Base Styles (used across all viewports)
 ============================================*/
-.red {
-	background-color: red;
-}
 
 body {
 	background: lighten($silver, 5%);
 }
 
 #wrapper {
-	//padding: 10px;
 	max-width: 960px;
 	margin: 0 auto;
 	position: relative;
@@ -49,10 +45,25 @@ header h2 {
 	margin-bottom: 20px;
 }
 
+header code {
+	margin-left: 0;
+}
+
+header code:first-of-type, 
+.progress-wrap code:first-of-type,
+.slider-wrap code:first-of-type {
+	margin-top: -20px !important;
+}
+
 section.content {
 	background: #fff;
 	margin-top: 20px;
-	padding: 0 30px 30px 30px;
+	padding: 0 15px 30px 15px;
+
+	@media only screen and (min-width: 640px) {
+		padding: 0 20px 30px 20px;
+	}
+	
 }
 
 .component-category {
@@ -60,7 +71,10 @@ section.content {
 	color: white;
 	background: #1F3340;
 	padding: 10px;
-	margin: 0 -30px 20px -30px;
+	margin: 0 -15px 20px -15px;
+	@media only screen and (min-width: 640px) {
+		margin: 0 -20px 20px -20px;;
+	}
 }
 
 .component-subcat {
@@ -68,8 +82,11 @@ section.content {
 	color: #7F2725;
 	font-size: 1.5em;
 	font-weight: bolder;
-	margin-left: -15px;
+}
 
+.remove-neg-margin {
+	margin-left: 0;
+	margin-right: 0;
 }
 
 code {
@@ -80,10 +97,18 @@ code {
 	display: block;
 	margin-top: 0;
 	margin-left: -15px;
+
+	@media only screen and (min-width:768px) {
+		margin-left: 0;
+	}
 }
 
 code:first-of-type {
 	margin-top: -20px;
+
+	@media only screen and (min-width:768px) {
+		margin-top: 0;
+	}
 }
 
 code:last-of-type {
@@ -110,9 +135,8 @@ code:last-of-type {
 .alert-action p {
 	line-height: 1.25;
 	margin-bottom: 10px;
+	width: 100%;
 }
-
-
 
 .close {
 	.alert-dismissible &, 
@@ -121,9 +145,15 @@ code:last-of-type {
 	}
 }
 
-// .alert-row.row {
-//   margin-left: 0;
-// }
+.block-alert-wrap {
+
+	code {
+		margin-left: -15px;
+	}
+	code:first-of-type {
+		margin-top: -15px;
+	}
+}
 
 // .component-subcat .alert {
 //   margin-bottom: 0;
@@ -160,9 +190,10 @@ code:last-of-type {
 /*======================================
     Badges (Overrides)
 ======================================*/
-// .badge-subscript {
-// 	margin:0 0 0 -6px;
-// }
+
+.user-badge-wrap code {
+	margin-left: 0;
+}
 
 /*======================================
     Branding Variables (Overrides)
@@ -186,8 +217,8 @@ code:last-of-type {
 	display: inline-block;
 	vertical-align: top;
 	margin: 10px;
+	margin-left: 0;
 	min-width: 100px;
-
 
 	button {
 		margin-bottom: 5px;
@@ -227,7 +258,7 @@ code:last-of-type {
 }
 
 .button-group-wrap {
-	margin-left: -15px;
+	margin-left: 0;
 	//margin-bottom: 25px;
 }
 
@@ -287,8 +318,6 @@ code:last-of-type {
 
 .text-group-wrap {
 
-	margin-left: -30px;
-
 	code {
 		margin: -20px 0 20px 0;
 	}
@@ -304,15 +333,11 @@ input[type="text"] {
 }
 
 .form-group {
-	margin-left: -15px;
+
 	button {
 		margin-top: -10px
 	}
 }
-
-
-
-
 
 /*======================================
     Icons (Overrides)
@@ -334,127 +359,132 @@ input[type="text"] {
     Navbar (Overrides)
 ======================================*/
 
-// .nav-stacked {
-// 	width: 200px;
-// }
+.nav-stacked {
+	width: 200px;
+}
 
-// #nav-menu
-// {
-//     position: fixed;
-//     z-index: 3;
-//     top: 0;
-//     right: 0;
+#nav-menu
+{
+    position: fixed;
+    z-index: 3;
+    top: 0;
+    right: 0;
 
-//     width: 350px;
-//     height: 100vh;
-//     padding: 10px 0 0 0;
+    width: 250px;
+    height: 100vh;
+    padding: 10px 0 0 0;
 
-//     opacity: .98;
-//     background: #1f3340;
+    opacity: .98;
+    background: #1f3340;
 
-//     right: -350px;
-//     transition:right 0.5s ease-in-out;
-// }
+    right: -250px;
+    transition:right 0.5s ease-in-out;
 
-// #nav-menu.show-menu {
-//     right: 0px;
-//     transition:right 0.5s ease-in-out;
-// }
+	 @media only screen and (min-width:480px) {
+		width: 350px;
+		right: -350px;
+	 }
+}
 
-// #nav-menu li
-// {
-//     margin: 0 0 2px 0;
+#nav-menu.show-menu {
+    right: 0px;
+    transition:right 0.5s ease-in-out;
+}
 
-//     list-style-type: none;
+#nav-menu li
+{
+    margin: 0 0 2px 0;
 
-//     background: lighten(#1f3340, 10%);
-// }
+    list-style-type: none;
 
-// #nav-menu ul
-// {
-//     padding: 0;
-// }
+    background: lighten(#1f3340, 10%);
+}
 
-// #nav-menu a
-// {
-//     font-family: 'Source Sans Pro';
-//     font-size: 22px;
+#nav-menu ul
+{
+    padding: 0;
+}
 
-//     display: inline-block;
+#nav-menu a
+{
+    font-family: 'Source Sans Pro';
+    font-size: 22px;
 
-//     width: 100%;
-//     padding: 5px 15px 5px 15px;
+    display: inline-block;
 
-//     color: #fff;
-//     outline: 0;
-// }
+    width: 100%;
+    padding: 5px 15px 5px 15px;
 
-// #nav-menu a.nav-active {
-//     color: #ccc;
-//     background-color: lighten(#1f3340, 5%);
-// }
+    color: #fff;
+    outline: 0;
+}
 
-// a#menu-open {
-//     width: 40px;
-// }
+#nav-menu a.nav-active {
+    color: #ccc;
+    background-color: lighten(#1f3340, 5%);
+}
 
-// #nav-menu a:hover, #nav-menu a:active, #nav-menu a:focus
-// {
-//     text-decoration: none;
-//     color: #ccc;
-//     background-color: lighten(#1f3340, 5%);
-// }
+a#menu-open {
+    width: 40px;
+}
 
-// .menu-logo
-// {
-//     background-image: url('/img/logo-cl.svg');
-//     background-repeat: no-repeat;
-//     background-position: center;
-//     height: 60px;
-//     font-size: 0; // remove the H1 text using font-size instead of text-indend: -9999px;
-// }
+#nav-menu a:hover, #nav-menu a:active, #nav-menu a:focus
+{
+    text-decoration: none;
+    color: #ccc;
+    background-color: lighten(#1f3340, 5%);
+}
 
-// .menu-header
-// {
-//     font-family: 'Oswald Light';
-//     font-size: 30px;
+.menu-logo
+{
+    background-image: url('/img/logo-cl.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 60px;
+    font-size: 0; // remove the H1 text using font-size instead of text-indend: -9999px;
+}
 
-//     margin: 15px;
-//     margin-top: 30px;
+.menu-header
+{
+    font-family: 'Oswald Light';
+    font-size: 30px;
 
-//     color: #fff;
-// }
+    margin: 15px;
+    margin-top: 30px;
 
-// #menu-open
-// {
-//     position: absolute;
-//     z-index: 2;
-//     top: 20px;
-//     left: -40px;
+    color: #fff;
+}
 
-//     width: 40px;
-//     height: 40px;
-//     padding: 5px;
+#menu-open
+{
+    position: absolute;
+    z-index: 2;
+    top: 20px;
+    left: -40px;
 
-//     border: none;
-//     background: #1f3340;
-//     background-image: url("/img/btn-menu.svg");
-//     background-repeat: no-repeat;
-//     background-position: center;
-// }
+    width: 40px;
+    height: 40px;
+    padding: 5px;
 
-// .show-menu #menu-open {
-//     background-image: url("/img/btn-menu-close.svg");
-//     background-repeat: no-repeat;
-//     background-position: center;
-// }
+    border: none;
+    background: #1f3340;
+    background-image: url("/img/btn-menu.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
 
-// @media only screen and (max-width: 960) {
-//     h1.main-page-title {
-//         margin-left: 15px;
-//         padding-left: 15px;
-//     }
-// }
+.show-menu #menu-open {
+    background-image: url("/img/btn-menu-close.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+@media only screen and (max-width: 960) {
+    h1.main-page-title {
+        margin-left: 15px;
+        padding-left: 15px;
+    }
+}
 
 /*======================================
     Navs (Overrides)
@@ -493,21 +523,20 @@ border-left: none;
     Progress Bars (Overrides)
 ======================================*/
 
-.progress-wrap {
-
-	.progress {
-		margin-left: -15px;
+.progress-wrap,
+.slider-wrap,
+.text-input-addons-wrap {
+	code {
+		margin-left: 0;
 	}
-	
 }
-
+	
 
 /*======================================
     Scaffolding (Overrides)
 ======================================*/
 
 .img-group {
-	margin-left: -15px;
 	margin-bottom: 40px;
 
 	.img-code-wrap {
@@ -589,7 +618,6 @@ border-left: none;
 	display: inline-block;
 	min-width: 300px;
 	margin-bottom: 20px;
-	margin-left: -15px;
 }
 
 /*======================================
