@@ -11,7 +11,7 @@ $('a[href*=#]:not([href=#])').click(function() {
              $('html,body').animate({
                  scrollTop: target.offset().top
             }, 500);
-            return false;
+            //return false; //return flase removes the #hash-link-name from the URL.
         }
     }
 });

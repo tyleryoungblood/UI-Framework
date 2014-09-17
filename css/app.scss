@@ -95,9 +95,31 @@ code:last-of-type {
     Alerts (Overrides)
 ======================================*/
 
-// .alert {
-//   margin: 12px 0;
-// }
+.alert {
+  margin-bottom: 24px;
+  a {
+  	margin-top: 6px;
+  }
+}
+
+.alert-action p, 
+.alert-action a {
+	line-height: 1.25;
+}
+
+.alert-action p {
+	line-height: 1.25;
+	margin-bottom: 10px;
+}
+
+
+
+.close {
+	.alert-dismissible &, 
+	.alert-dismissable & {  // same as .alert-dismissible .close, .alert-dismissable .close { ... }
+		right: 0;
+	}
+}
 
 // .alert-row.row {
 //   margin-left: 0;
@@ -158,6 +180,57 @@ code:last-of-type {
     Buttons (Overrides)
 ======================================*/
 
+
+.button-group {
+
+	display: inline-block;
+	vertical-align: top;
+	margin: 10px;
+	min-width: 100px;
+
+
+	button {
+		margin-bottom: 5px;
+	}
+
+	code {
+		margin-left: 0;
+		margin-top: 0;
+	}
+
+	code:last-of-type {
+		margin-bottom: 0;
+	}
+
+	&.bg-light, 
+	&.bg-medium, 
+	&.bg-dark {
+		padding: 30px;
+		height: auto;
+	}
+
+	&.bg-light {
+		background-color: $platinum;
+		border: 1px solid $pewter;
+	}
+
+	&.bg-medium {
+		background-color: $pewter;
+		border: 1px solid $slate;
+	}
+
+	&.bg-dark {
+		background-color: $slate;
+		border: 1px solid $charcoal;
+	}
+	
+}
+
+.button-group-wrap {
+	margin-left: -15px;
+	//margin-bottom: 25px;
+}
+
 // .button-colors code {
 // 	margin-bottom: 15px;
 // }
@@ -211,6 +284,35 @@ code:last-of-type {
 /*======================================
     Forms (Overrides)
 ======================================*/
+
+.text-group-wrap {
+
+	margin-left: -30px;
+
+	code {
+		margin: -20px 0 20px 0;
+	}
+
+}
+
+input[type="text"] {
+	margin-bottom: 20px;
+}
+
+.input-group {
+	margin-bottom: 20px;
+}
+
+.form-group {
+	margin-left: -15px;
+	button {
+		margin-top: -10px
+	}
+}
+
+
+
+
 
 /*======================================
     Icons (Overrides)
@@ -382,23 +484,33 @@ code:last-of-type {
     Progress Bars (Overrides)
 ======================================*/
 
+.progress-wrap {
+
+	.progress {
+		margin-left: -15px;
+	}
+	
+}
+
+
 /*======================================
     Scaffolding (Overrides)
 ======================================*/
 
 .img-group {
 	margin-left: -15px;
+	margin-bottom: 40px;
 
 	.img-code-wrap {
 		margin-right: 20px;
 	}
-
 }
 
 .img-code-wrap {
 	display: inline-block;
 	//background-color: red;
 	float: left;
+	margin-top: 10px;
 
 	a {
 		padding-top: 0;
@@ -409,6 +521,42 @@ code:last-of-type {
 		margin-left: 0;
 
 	}
+
+	code:last-of-type { 
+		margin-bottom: 15px; 
+	}
+}
+
+.label-group {
+	display: inline-block;
+	float: left;
+	margin: 10px;
+	position: relative;
+	height: 53px;
+
+	span + span {
+		position: absolute;
+		top: 35px;
+		left: 0px;
+	}
+}
+
+.label-group-wrap {
+	margin-left: -10px;
+}
+
+.badge {
+	margin: 10px;
+}
+
+.badge-subscript {
+	margin-left: -10px;
+	top: 10px;
+	margin-bottom: 20px;
+}
+
+.badge-group-wrap {
+	margin-left: -10px;
 }
 
 // @media only screen and (max-width: 767px) {
@@ -423,6 +571,16 @@ code:last-of-type {
 
 // }
 
+
+/*======================================
+    Slider (Overrides)
+======================================*/
+
+.slider{
+	display: inline-block;
+	min-width: 300px;
+	margin-bottom: 40px;
+}
 
 /*======================================
     Tables (Overrides)
