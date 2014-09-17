@@ -1,8 +1,8 @@
 // On document ready, initialize noUiSlider.
 $(function(){
 
-  $(".slider-with-tooltip").noUiSlider({
-    start: [50],
+  $(".slider").noUiSlider({
+    start: [75],
     range: {
       'min': 0,
       'max': 100
@@ -11,7 +11,7 @@ $(function(){
 
   // Tags after '-inline-' are inserted as HTML.
   // noUiSlider writes to the first element it finds.
-  $(".slider-with-tooltip").Link('lower').to('-inline-<div class="slider-tooltip"></div>', function ( value ) {
+  $(".slider").Link('lower').to('-inline-<div class="slider-tooltip"></div>', function ( value ) {
 
     // The tooltip HTML is 'this', so additional
     // markup can be inserted here.

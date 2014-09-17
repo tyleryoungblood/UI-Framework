@@ -460,9 +460,18 @@ input[type="text"] {
     Navs (Overrides)
 ======================================*/
 
+a > .badge {
+	margin: 3px;
+}
+
 /*======================================
     Pagination (Overrides)
 ======================================*/
+
+.pagination-collapsed li + li a {
+border-left: none;
+}
+
 
 /*======================================
     Panels (Overrides)
@@ -579,7 +588,8 @@ input[type="text"] {
 .slider{
 	display: inline-block;
 	min-width: 300px;
-	margin-bottom: 40px;
+	margin-bottom: 20px;
+	margin-left: -15px;
 }
 
 /*======================================
