@@ -116,6 +116,28 @@ code:last-of-type {
 	margin-bottom: 20px;
 }
 
+.codeTooltip {
+	position: fixed;
+	background-color: $silver;
+	border: 1px solid #999;
+	visibility: hidden;
+	opacity: 0;
+	z-index: 999;
+	padding: 10px;
+	border-radius: 5px;
+	transition: visibility .5s ease-in-out, opacity .5s ease-in-out;
+	width: 240px;
+	overflow: visible;
+	top: 25%;
+	left: calc(50% - 120px);
+}
+
+code:hover + .codeTooltip {
+	visibility: visible;
+	opacity: 1;
+	transition: visibility .5s ease-in-out, opacity .5s ease-in-out;
+}
+
 
 /*======================================
     Alerts (Overrides)
@@ -128,7 +150,7 @@ code:last-of-type {
   }
 
   //@include make-sm-column(9);
-  @extend .col-sm-9;
+  @extend .col-sm-9; // make all .alert 9 cols in small view
 }
 
 
@@ -151,6 +173,10 @@ code:last-of-type {
 	.alert-dismissable & {  // same as .alert-dismissible .close, .alert-dismissable .close { ... }
 		right: 0;
 	}
+}
+
+.alert-block {
+	@extend .col-md-6;
 }
 
 .block-alert-wrap {
@@ -331,8 +357,8 @@ code:last-of-type {
 
 }
 
-input[type="text"] {
-	margin-bottom: 20px;
+input[type="text"] + code {
+	margin-top: -5px;
 }
 
 .input-group {
@@ -346,6 +372,13 @@ input[type="text"] {
 	}
 }
 
+.input-group-btn, .input-group-addon {
+	width: inherit;
+}
+
+input[type="text"] {
+	width: 100%;
+}
 /*======================================
     Icons (Overrides)
 ======================================*/
